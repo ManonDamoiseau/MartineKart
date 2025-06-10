@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Net.NetworkInformation;
+using MartineKart.Models;
 
 namespace MartineKart
 {
@@ -26,21 +29,28 @@ namespace MartineKart
             if (choixCircuit == 1)
                 {
                     Console.WriteLine("Tu as choisi le CIRCUIT EN 8!");
-                    //Appel méthode circuit en 8
+                //Création circuit
+                
 #warning WIP méthode
-                }
+            }
             else if (choixCircuit == 2)
                 {
                     Console.WriteLine("Tu as choisi le CIRCUIT POIRE!");
-                    //Appel méthode circuit poire
+                //Création circuit
+                Circuit circuitPoire = new Circuit();
+                circuitPoire._distance = 50;
+                circuitPoire.IsRain();
 #warning WIP méthode
-                }
+            }
             else
                 {
                 Console.WriteLine("Tu as choisi le CIRCUIT ARC-EN-CIEL");
-                //Appel méthode circuit arc-en-ciel
+                //Création circuit
+                Circuit circuitArcEnCiel = new Circuit();
+                circuitArcEnCiel._distance = 70;
+                circuitArcEnCiel.IsRain();
 #warning WIP méthode
-                }
+            }
 
 
             #endregion
