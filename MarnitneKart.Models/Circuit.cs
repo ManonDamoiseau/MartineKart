@@ -1,4 +1,5 @@
-﻿namespace MarnitneKart.Models
+﻿
+namespace MartineKart.Models
 {
     public class Circuit
     {
