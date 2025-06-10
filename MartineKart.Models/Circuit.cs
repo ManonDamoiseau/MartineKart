@@ -23,24 +23,35 @@ namespace MartineKart.Models
             this.NbrTour = NbrTour;
             this.Distance = Distance;
             this.Rain = Rain;
-            IsRain();
         }
+
+        #region Méthode Description Circuit
+        public void DescriptionCircuit()
+        {
+            Console.WriteLine("\nVoici les caractéristiques du circuit:");
+            Console.WriteLine($"Nombre de tour = {NbrTour}");
+            Console.WriteLine($"Distance = {Distance}");
+           #if DEBUG
+            Console.WriteLine($"Pluie = {Rain}");
+           #endif
+        }
+        #endregion
 
         #region Méthode Pluie
         public void IsRain()
         {
             Random rnd = new Random();
             int rain = rnd.Next(2);
+            Console.WriteLine("----------------------------------------------");
+            Console.WriteLine("\n           ===== ANNONCE METEO =====");
             if (rain == 0)
             {
                 Rain = true;
-                Console.WriteLine("\n           ===== ANNONCE METEO =====");
-                Console.WriteLine("Il semblerait que nous auront de la pluie aujourd'hui!");
+                Console.WriteLine("Attention les As du volant, aujourd'hui on annonce de la pluie!");
             }
             else
             {
                 Rain = false;
-                Console.WriteLine("\n           ===== ANNONCE METEO =====");
                 Console.WriteLine("Le temps sera ensoleillé et sec toute la journée!");
             }
         }

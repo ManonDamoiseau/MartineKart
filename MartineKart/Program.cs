@@ -34,30 +34,24 @@ namespace MartineKart
                     Console.WriteLine("Tu as choisi le CIRCUIT EN 8!");
                 //Création circuit    ! pluie aléatoire            
                 Circuit circuitEn8 = new Circuit(30, 70, true);
-                Console.WriteLine("\nVoici les caractéristiques du circuit:");
-                Console.WriteLine($"Nombre de tour = {circuitEn8.NbrTour}");
-                Console.WriteLine($"Distance = {circuitEn8.Distance}");
-                Console.WriteLine($"Pluie = {circuitEn8.Rain}");
+                circuitEn8.IsRain();
+                circuitEn8.DescriptionCircuit();
             }
             else if (choixCircuit == 2)
                 {
                     Console.WriteLine("Tu as choisi le CIRCUIT POIRE!");
                 //Création circuit    ! pluie aléatoire
                 Circuit circuitPoire = new Circuit(50, 100, false);
-                Console.WriteLine("\nVoici les caractéristiques du circuit:");
-                Console.WriteLine($"Nombre de tour = {circuitPoire.NbrTour}");
-                Console.WriteLine($"Distance = {circuitPoire.Distance}");
-                Console.WriteLine($"Pluie = {circuitPoire.Rain}");
+                circuitPoire.IsRain();
+                circuitPoire.DescriptionCircuit();
             }
             else
                 {
                 Console.WriteLine("Tu as choisi le CIRCUIT ARC-EN-CIEL");
                 //Création circuit    ! pluie aléatoire
                 Circuit circuitArcEnCiel = new Circuit(70, 150, true);
-                Console.WriteLine("\nVoici les caractéristiques du circuit:");
-                Console.WriteLine($"Nombre de tour = {circuitArcEnCiel.NbrTour}");
-                Console.WriteLine($"Distance = {circuitArcEnCiel.Distance}");
-                Console.WriteLine($"Pluie = {circuitArcEnCiel.Rain}");
+                circuitArcEnCiel.IsRain();
+                circuitArcEnCiel.DescriptionCircuit();
             }
             
 
