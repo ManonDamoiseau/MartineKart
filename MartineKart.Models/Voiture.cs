@@ -8,6 +8,7 @@ namespace MartineKart.Models
 {
     public class Voiture : Vehicule
     {
+        
         public Voiture(string modele, string marque) : base(modele, marque)
         {
             this.Modele = modele;
@@ -15,8 +16,7 @@ namespace MartineKart.Models
         }
         public void TempsParTour(double distance)
         {
-
-            //1d8+ temps  
+            
         }
     }
 }

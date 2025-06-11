@@ -75,6 +75,8 @@ namespace MartineKart
                 Console.WriteLine("Tu as choisi une voiture!");
                 Voiture voiture = new Voiture("Voiture", "SuperKart");
                 voiture.Description();
+                //voiture.Dice1d8();
+                #warning
             }
             else if (choixVehicule == 2)
             {

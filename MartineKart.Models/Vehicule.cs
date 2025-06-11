@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace MartineKart.Models
 {
-    public abstract class Vehicule
+    public abstract class Vehicule : iRandoms
     {
         public string Modele { get; set; }
         public string Marque { get; set; }
-        public Timer TempsTotal { get; set; }
+        public int TempsTotal { get; set; }
         public double VitMin { get; set; }
         public double VitMax { get; set; }
         
