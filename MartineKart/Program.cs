@@ -59,11 +59,11 @@ namespace MartineKart
             #region CHOIX Vehicule
             Console.WriteLine("\n=== Choisi ton véhicule ===");
             Console.WriteLine(" 1 = Voiture");
-            Console.WriteLine(" 2 = Moto");
+            Console.WriteLine(" 2 = Moto\n");
             int.TryParse(Console.ReadLine(), out int choixVehicule);
 
             //Sécuriser le choix
-            while (choixVehicule != 1 && choixCircuit != 2)
+            while (choixVehicule != 1 && choixVehicule != 2)
             {
                 Console.WriteLine("ERREUR : Tu dois entrer un chiffre correspondant à un véhicule");
                 int.TryParse(Console.ReadLine(), out choixVehicule);
@@ -73,11 +73,16 @@ namespace MartineKart
             if (choixVehicule == 1)
             {
                 Console.WriteLine("Tu as choisi une voiture!");
+                Voiture voiture = new Voiture("Voiture", "SuperKart");
+                voiture.Description();
             }
-            else
+            else if (choixVehicule == 2)
             {
                 Console.WriteLine("Tu as choisi une moto!");
+                Moto moto = new Moto("Moto", "Vroumvroum");
+                moto.Description();
             }
+            
             #endregion
 
             #endregion

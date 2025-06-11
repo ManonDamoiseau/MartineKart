@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MartineKart.Models
 {
-    internal class Voiture : Vehicule
+    public class Voiture : Vehicule
     {
         public Voiture(string modele, string marque) : base(modele, marque)
         {

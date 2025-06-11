@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MartineKart.Models
 {
-    internal abstract class Vehicule
+    public abstract class Vehicule
     {
         public string Modele { get; set; }
         public string Marque { get; set; }
@@ -26,6 +26,14 @@ namespace MartineKart.Models
         public void TempsParTour(double distance)
         {
             
-        }    
+        }
+
+        //Méthode afficher caractéristiques vehicule
+        public void Description()
+        {
+            Console.WriteLine("Les caractéristiques de ton véhicule:");
+            Console.WriteLine($"{Modele}");
+            Console.WriteLine($"{Marque}");
+        }
     }
 }
