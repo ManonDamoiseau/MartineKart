@@ -18,11 +18,11 @@ namespace MartineKart.Models
        public bool Rain { get; set; }
 
         // Constructeur 
-        public Circuit(int NbrTour, double Distance, bool Rain)
+        public Circuit(int nbrTour, double distance, bool rain)
         {
-            this.NbrTour = NbrTour;
-            this.Distance = Distance;
-            this.Rain = Rain;
+            this.NbrTour = nbrTour;
+            this.Distance = distance;
+            this.Rain = rain;
         }
 
         #region Méthode Description Circuit
